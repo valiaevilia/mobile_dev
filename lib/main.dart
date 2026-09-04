@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'lab2/lab2.dart';
+import 'lab3/lab3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Lab2Page(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.orangeAccent,
+        ),
+        useMaterial3: true,
+      ),
+      home: const Lab3Page(),
     );
   }
 }
