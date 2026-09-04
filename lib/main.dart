@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'lab2/lab2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,13 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Валяев Илья ПИбд-33'),
-        ),
-      ),
+      home: Lab2Page(),
     );
   }
 }
