@@ -34,16 +34,27 @@ class CardList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const data = CardData(
-      title: 'Minions',
-      description: 'I love ULSTU',
-      imagePath: 'image/photo_2026-09-04_23-06-10.jpg',
-      icon: Icons.movie,
-    );
+    const data = [
+      CardData(
+        title: 'Маяк 2019',
+        description: 'The Lighthouse',
+        imagePath: 'image/45ea3b3c78d89d0e7b8e6b71284e75c4.jpg',
+        icon: Icons.movie,
+      ),
 
-    return Center(
-      child: SingleChildScrollView(
-        child: InfoCard.fromData(data),
+      CardData(
+        title: 'Ноябрь 2017',
+        description: 'November',
+        imagePath: 'image/nov.png',
+        icon: Icons.movie,
+      ),
+    ];
+
+    return SingleChildScrollView(
+      child: Column(
+        children: data
+            .map((movie) => InfoCard.fromData(movie))
+            .toList(),
       ),
     );
   }
@@ -96,8 +107,8 @@ class InfoCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(20),
             child: SizedBox(
-              width: 120,
-              height: 160,
+              width: 140,
+              height: 100,
               child: Image.asset(
                 imagePath,
                 fit: BoxFit.cover,
