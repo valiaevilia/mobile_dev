@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'lab3/lab3.dart';
+import 'lab4/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const Lab3Page(),
+      home: const Lab4Page(),
     );
   }
 }
