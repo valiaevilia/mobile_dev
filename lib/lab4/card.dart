@@ -71,6 +71,10 @@ class _MovieCardState extends State<_MovieCard> {
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              const SizedBox(height: 16),
+              Text(widget.descriptionText),
+              const SizedBox(height: 12),
+              Text(widget.details),
               ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
@@ -79,10 +83,6 @@ class _MovieCardState extends State<_MovieCard> {
                   fit: BoxFit.cover,
                 ),
               ),
-              const SizedBox(height: 16),
-              Text(widget.descriptionText),
-              const SizedBox(height: 12),
-              Text(widget.details),
             ],
           ),
           actions: [

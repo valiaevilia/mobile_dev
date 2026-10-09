@@ -73,7 +73,7 @@ class _Lab2PageState extends State<Lab2Page> {
           children: [
             Text(
               'Сумма: ${payment.amount.rubles}',
-              style: const TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 30),
             ),
             const SizedBox(height: 20),
 
