@@ -37,6 +37,9 @@ dependencies:
   dio: ^5.11.1
   pretty_dio_logger: ^1.4.0
   json_annotation: ^4.12.0
+  flutter_bloc: ^9.1.1
+  equatable: ^3.0.0
+  copy_with_extension: ^18.0.0
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +53,7 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   build_runner: ^2.16.2
   json_serializable: ^6.14.1
+  copy_with_extension_gen: ^18.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
