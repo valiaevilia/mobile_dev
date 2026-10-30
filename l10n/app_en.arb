@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "labTitle": "Laboratory work №7",
+  "search": "Movie search",
+  "searchHint": "For example: The Lighthouse",
+  "moviesNotFound": "Movies not found",
+  "loadingError": "Loading error",
+  "close": "Close",
+  "switchLanguage": "Switch to Russian",
+  "addLike": "Like",
+  "removeLike": "Remove like",
+  "likesError": "Could not load or save likes"
+}
